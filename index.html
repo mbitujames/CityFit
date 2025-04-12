@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Fit - Premium Gym & Fitness Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">CITY<span>FIT</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn btn-primary" id="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Body. <span>Elevate Your Life.</span></h1>
+                <p>Join the premier fitness community in the city with state-of-the-art facilities and expert trainers.</p>
+                <div class="hero-btns">
+                    <a href="#membership" class="btn btn-primary">Join Now</a>
+                    <a href="#classes" class="btn btn-secondary">View Classes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>5,000+</h3>
+                    <p>Members</p>
+                </div>
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Classes Weekly</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24/7</h3>
+                    <p>Access</p>
+                </div>
+                <div class="stat-card">
+                    <h3>15</h3>
+                    <p>Expert Trainers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <div class="container">
+            <h2 class="section-title">Membership Plans</h2>
+            <p class="section-subtitle">Choose the plan that fits your fitness journey</p>
+            
+            <div class="membership-grid">
+                <div class="membership-card">
+                    <h3>Basic</h3>
+                    <div class="price">$29<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Gym Access</li>
+                        <li><i class="fas fa-check"></i> Free Weights</li>
+                        <li><i class="fas fa-times"></i> Group Classes</li>
+                        <li><i class="fas fa-times"></i> Personal Trainer</li>
+                        <li><i class="fas fa-times"></i> 24/7 Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+                
+                <div class="membership-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Premium</h3>
+                    <div class="price">$59<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Gym Access</li>
+                        <li><i class="fas fa-check"></i> Free Weights</li>
+                        <li><i class="fas fa-check"></i> All Group Classes</li>
+                        <li><i class="fas fa-check"></i> 1 PT Session/Month</li>
+                        <li><i class="fas fa-check"></i> 24/7 Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="membership-card">
+                    <h3>Family</h3>
+                    <div class="price">$99<span>/month</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Gym Access (4 people)</li>
+                        <li><i class="fas fa-check"></i> Free Weights</li>
+                        <li><i class="fas fa-check"></i> All Group Classes</li>
+                        <li><i class="fas fa-check"></i> 2 PT Sessions/Month</li>
+                        <li><i class="fas fa-check"></i> 24/7 Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="pay-per-session">
+                <h3>Pay-Per-Session Options</h3>
+                <div class="session-options">
+                    <div class="session-option">
+                        <span>Single Class</span>
+                        <span>$15</span>
+                    </div>
+                    <div class="session-option">
+                        <span>Personal Training</span>
+                        <span>$50/session</span>
+                    </div>
+                    <div class="session-option">
+                        <span>Day Pass</span>
+                        <span>$20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes" id="classes">
+        <div class="container">
+            <h2 class="section-title">Our Classes</h2>
+            <p class="section-subtitle">Find the perfect workout for your goals</p>
+            
+            <div class="class-categories">
+                <button class="category-btn active" data-category="all">All Classes</button>
+                <button class="category-btn" data-category="strength">Strength</button>
+                <button class="category-btn" data-category="cardio">Cardio</button>
+                <button class="category-btn" data-category="hiit">HIIT</button>
+                <button class="category-btn" data-category="mind-body">Mind & Body</button>
+            </div>
+            
+            <div class="classes-grid">
+                <!-- Classes will be populated by JavaScript -->
+            </div>
+            
+            <div class="virtual-workouts">
+                <h3><i class="fas fa-laptop"></i> Virtual Workouts</h3>
+                <p>Can't make it to the gym? Access our library of 200+ on-demand workouts or join live-streamed classes from home.</p>
+                <a href="#" class="btn btn-secondary">Explore Virtual Options</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <h2 class="section-title">Meet Our Trainers</h2>
+            <p class="section-subtitle">Certified professionals to guide your journey</p>
+            
+            <div class="trainers-grid">
+                <!-- Trainers will be populated by JavaScript -->
+            </div>
+            
+            <div class="booking-system">
+                <h3>Book a Personal Training Session</h3>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="trainer-select">Select Trainer</label>
+                        <select id="trainer-select" required>
+                            <option value="">-- Select --</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="session-date">Date</label>
+                        <input type="date" id="session-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="session-time">Time</label>
+                        <input type="time" id="session-time" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Session</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose City Fit?</h2>
+            <p class="section-subtitle">Premium features for your fitness journey</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App</h3>
+                    <p>Track workouts, book classes, and connect with trainers through our dedicated app.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Challenges & Leaderboards</h3>
+                    <p>Join fitness challenges, track progress, and compete with friends.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Nutrition Planning</h3>
+                    <p>Custom meal plans and nutrition counseling from certified dietitians.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Wellness Services</h3>
+                    <p>Massage therapy, physiotherapy, and mental wellness sessions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Forums</h3>
+                    <p>Connect with other members, share tips, and stay motivated.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Detailed analytics to monitor your fitness journey and set new goals.</p>
+                </div>
+            </div>
+            
+            <div class="loyalty-program">
+                <div class="loyalty-content">
+                    <h3>Loyalty Rewards Program</h3>
+                    <p>Earn points for every visit, class attended, and friend referred. Redeem points for free personal training sessions, merchandise, or membership upgrades.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="loyalty-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Loyalty Program" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <p class="section-subtitle">What our members say about us</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>"City Fit transformed my life! The trainers are knowledgeable and the community is so supportive. I've lost 30 pounds and gained so much confidence."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                            <div>
+                                <h4>Sarah J.</h4>
+                                <span>Member for 2 years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The 24/7 access is perfect for my schedule as a nurse. I love the variety of classes and the app makes booking so easy."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T.">
+                            <div>
+                                <h4>Michael T.</h4>
+                                <span>Member for 1 year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Our whole family uses the family membership. The kids love the youth classes and my wife and I enjoy the couples yoga sessions."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa & David R.">
+                            <div>
+                                <h4>Lisa & David R.</h4>
+                                <span>Family Members</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Fitness Ave, Downtown, City</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@cityfit.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 5am - 11pm<br>Sat-Sun: 7am - 9pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>City Fit</h3>
+                    <p>Your premier destination for fitness and wellness in the city. We're committed to helping you achieve your health goals.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Nutrition Planning</a></li>
+                        <li><a href="#">Wellness Services</a></li>
+                        <li><a href="#">Virtual Workouts</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new classes, special offers, and fitness tips.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 City Fit. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Member Login</h2>
+            <form id="memberLoginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="form-footer">
+                    <a href="#" class="text-link">Forgot Password?</a>
+                    <p>Not a member? <a href="#membership" class="text-link">Join Now</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
